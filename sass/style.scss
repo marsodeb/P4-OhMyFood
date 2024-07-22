@@ -1,3 +1,27 @@
+// Base
+@import "./libs/reset.scss";
+@import "./components/colors.scss";
+
 * {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
+
+body {
+    background-color: $light-grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Components
+@import "./components/default.scss";
+@import "./components/button.scss";
+@import "./components/new-banner.scss";
+@import "./components/card.scss";
+
+// Style
+@import "./style/header.scss";
+@import "./style/location.scss";
+@import "./style/presentation.scss";
+@import "./style/fonctionnement.scss";

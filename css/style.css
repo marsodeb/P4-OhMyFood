@@ -1,5 +1,151 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 * {
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.section__txt {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+}
+.btn--rounded {
+  height: 50px;
+  border-radius: 25px;
+}
+.btn--gradient {
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+
+.new {
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  display: flex;
+  width: 80px;
+  height: 29px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 15px;
+  min-height: 69px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.header__logo {
+  height: 30px;
+}
+
+.location {
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 17px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location__icon {
+  font-size: 16px;
+  padding-right: 17px;
+}
+.location__txt {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.presentation {
+  padding: 0 20px;
+  margin: 39px 0 57px 0;
+}
+.presentation__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.presentation__content button {
+  width: 218px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.fonctionnement {
+  background-color: white;
+  padding: 48px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.fonctionnement__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.fonctionnement__cards .card {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.fonctionnement__cards .card__content {
+  display: flex;
+  align-items: center;
+}
+.fonctionnement__cards .card__content__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: #9356DC;
+  position: absolute;
+  left: -12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+.fonctionnement__cards .card__content__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.fonctionnement__cards .card__content__icon {
+  font-size: 18px;
+  color: #7E7E7E;
+  position: absolute;
+  left: 35px;
+}
+.fonctionnement__cards .card__content__icon--purple {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
