@@ -1,4 +1,4 @@
-# OC Projet 2 - OhMyFood
+# OC Projet 4 - OhMyFood
 
 Ce projet venant de ma formation chez OpenClassrooms est un entraînement à l'utilisation de Sass & des animations CSS.
 Le projet devait être développé en mobile first.
