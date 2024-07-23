@@ -1,0 +1,40 @@
+.restaurant {
+    padding: 54px 20px 66px 20px;
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 17px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .new {
+                position: absolute;
+                right: 0;
+                margin: 15px;
+            }
+
+            img {
+                border-radius: 15px 15px 0 0;
+                height: 174px;
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                padding: 16px 13px;
+
+                &__like {
+                    position: absolute;
+                    right: 25px;
+                }
+            }
+        }
+    }
+
+}

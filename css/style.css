@@ -46,6 +46,24 @@ a {
 .card {
   border-radius: 15px;
   min-height: 69px;
+  background-color: white;
+}
+.card__content {
+  color: black;
+}
+.card__content__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.card__content__subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+.card__content__like .btn {
+  font-size: 22px;
+}
+.card img {
+  object-fit: cover;
 }
 
 .header {
@@ -111,6 +129,7 @@ a {
 }
 .fonctionnement__cards .card {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  background-color: #F6F6F6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,6 +165,40 @@ a {
 }
 .fonctionnement__cards .card__content__icon--purple {
   color: #9356DC;
+}
+
+.restaurant {
+  padding: 54px 20px 66px 20px;
+}
+.restaurant__cards {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 17px;
+}
+.restaurant__cards .card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.restaurant__cards .card .new {
+  position: absolute;
+  right: 0;
+  margin: 15px;
+}
+.restaurant__cards .card img {
+  border-radius: 15px 15px 0 0;
+  height: 174px;
+}
+.restaurant__cards .card__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 16px 13px;
+}
+.restaurant__cards .card__content__like {
+  position: absolute;
+  right: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
