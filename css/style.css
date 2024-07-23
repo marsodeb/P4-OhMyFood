@@ -9,6 +9,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .section__title {
@@ -199,6 +200,34 @@ a {
 .restaurant__cards .card__content__like {
   position: absolute;
   right: 25px;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__logo img {
+  height: 18px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__nav i {
+  min-width: 13px;
+  max-width: 13px;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.footer__nav__txt {
+  font-size: 16px;
+}
+.footer__nav__txt--bold {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,18 +2,6 @@
 @import "./libs/reset.scss";
 @import "./components/colors.scss";
 
-* {
-    font-family: "Roboto", sans-serif;
-}
-
-body {
-    background-color: $light-grey;
-}
-
-a {
-    text-decoration: none;
-}
-
 // Components
 @import "./components/default.scss";
 @import "./components/button.scss";
@@ -26,3 +14,4 @@ a {
 @import "./style/presentation.scss";
 @import "./style/fonctionnement.scss";
 @import "./style/restaurant.scss";
+@import "./style/footer.scss";

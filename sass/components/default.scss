@@ -1,3 +1,16 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: $light-grey;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .section {
     &__title {
         font-size: 24px;
