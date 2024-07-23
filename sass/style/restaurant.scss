@@ -21,6 +21,8 @@
             img {
                 border-radius: 15px 15px 0 0;
                 height: 174px;
+                width: 100%;
+                object-position: center 60%;
             }
 
             &__content {
@@ -32,6 +34,7 @@
                 &__like {
                     position: absolute;
                     right: 25px;
+                    bottom: 25px;
                 }
             }
         }
