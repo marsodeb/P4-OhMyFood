@@ -4,6 +4,7 @@
 
 // Components
 @import "./components/default.scss";
+@import "./components/loader.scss";
 @import "./components/button.scss";
 @import "./components/new-banner.scss";
 @import "./components/card.scss";
@@ -15,3 +16,7 @@
 @import "./style/fonctionnement.scss";
 @import "./style/restaurant.scss";
 @import "./style/footer.scss";
+
+// Animations 
+@import "./animations/loader_anim.scss";
+@import "./animations/button_anim.scss";
