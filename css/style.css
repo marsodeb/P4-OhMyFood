@@ -301,6 +301,7 @@ img {
 }
 .header__back .btn {
   font-size: 18px;
+  transition: 0.3s;
 }
 
 .presentation__img img {
@@ -488,6 +489,11 @@ img {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.header__back button:hover {
+  cursor: pointer;
+  color: #9356DC;
 }
 
 .restaurant__cards .card:hover {
