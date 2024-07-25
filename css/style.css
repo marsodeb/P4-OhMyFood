@@ -302,6 +302,18 @@ a {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+.fonctionnement__cards .card {
+  transition: 0.3s;
+}
+
+.fonctionnement__cards .card:hover {
+  background-color: rgba(146, 86, 220, 0.15);
+}
+
+.fonctionnement__cards .card:hover .card__content__icon {
+  color: #9356DC;
+}
+
 .card__content__like .liked {
   transform: scale(0);
   background: linear-gradient(0deg, rgb(147, 86, 220), rgb(255, 121, 218));
