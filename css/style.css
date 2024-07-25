@@ -89,6 +89,8 @@ img {
   height: 29px;
   align-items: center;
   justify-content: center;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .card {
@@ -309,10 +311,10 @@ img {
 
 .restaurant__menu {
   background-color: #F6F6F6;
-  padding: 32px 13px 0 13px;
+  padding: 32px 13px 32px 13px;
   border-radius: 40px 40px 0 0;
   position: relative;
-  top: -50px;
+  margin: -50px 0 0 0;
 }
 .restaurant__menu__title {
   display: flex;
@@ -559,6 +561,9 @@ img {
   }
 }
 @media (min-width: 768px) {
+  .main-container--white {
+    background-color: white;
+  }
   .fonctionnement {
     padding: 48px 45px;
   }
@@ -583,7 +588,8 @@ img {
     margin-bottom: 50px;
   }
   .restaurant__menu {
-    margin: 0px 193px;
+    margin: -30px 193px 0 193px;
+    top: 0;
   }
   .restaurant__menu__title {
     display: flex;
@@ -591,7 +597,8 @@ img {
     position: relative;
   }
   .restaurant__menu__like {
-    right: 0;
+    position: relative;
+    right: -20px;
   }
 }
 @media (min-width: 768px) and (min-width: 1281px) {
@@ -609,7 +616,7 @@ img {
     padding: 54px 180px 66px 180px;
   }
   .restaurant__menu {
-    padding: 32px 210px 0 210px;
+    padding: 32px 210px 32px 210px;
   }
   .footer {
     flex-direction: row-reverse;
