@@ -22,7 +22,6 @@
                 border-radius: 15px 15px 0 0;
                 height: 174px;
                 width: 100%;
-                object-position: center 60%;
             }
 
             &__content {
@@ -33,8 +32,24 @@
 
                 &__like {
                     position: absolute;
-                    right: 25px;
                     bottom: 25px;
+                    right: 25px;
+
+                    label {
+                        position: absolute;
+                        width: 22px;
+                        height: 22px;
+                        z-index: 1;
+                    }
+
+                    .card__content__like__button {
+                        display: none;
+                    }
+
+                    .like-border {
+                        position: absolute;
+                        //top: 3px;
+                    }
                 }
             }
         }

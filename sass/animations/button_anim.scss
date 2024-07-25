@@ -1,6 +1,6 @@
 .btn {
     &--main:hover {
-        background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+        @include gradient-purple-light;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
     }
 }

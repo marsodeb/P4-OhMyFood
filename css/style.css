@@ -23,12 +23,13 @@ a {
 .loader {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(1px);
   width: 100%;
   height: 100%;
   z-index: 100;
   visibility: hidden;
   background-repeat: no-repeat;
-  animation: loader 0.9s;
+  animation: loader 1.5s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,22 +38,22 @@ a {
   font-family: "Shrikhand", serif;
   font-weight: 400;
   font-size: 20px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(0deg, rgb(147, 86, 220), rgb(255, 121, 218));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
 }
 .loader span.oh {
   opacity: 0;
-  animation: ohmyfood__loader 0.3s;
+  animation: ohmyfood__loader 0.5s;
 }
 .loader span.my {
   opacity: 0;
-  animation: ohmyfood__loader 0.3s 0.3s;
+  animation: ohmyfood__loader 0.5s 0.5s;
 }
 .loader span.food {
   opacity: 0;
-  animation: ohmyfood__loader 0.3s 0.6s;
+  animation: ohmyfood__loader 0.5s 1s;
 }
 
 .btn {
@@ -99,11 +100,12 @@ a {
   font-size: 17px;
   font-weight: 300;
 }
-.card__content__like .btn {
+.card__content__like i {
   font-size: 22px;
 }
 .card img {
   object-fit: cover;
+  object-position: center 60%;
 }
 
 .header {
@@ -224,7 +226,6 @@ a {
   border-radius: 15px 15px 0 0;
   height: 174px;
   width: 100%;
-  object-position: center 60%;
 }
 .restaurant__cards .card__content {
   display: flex;
@@ -234,8 +235,20 @@ a {
 }
 .restaurant__cards .card__content__like {
   position: absolute;
-  right: 25px;
   bottom: 25px;
+  right: 25px;
+}
+.restaurant__cards .card__content__like label {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  z-index: 1;
+}
+.restaurant__cards .card__content__like .card__content__like__button {
+  display: none;
+}
+.restaurant__cards .card__content__like .like-border {
+  position: absolute;
 }
 
 .footer {
@@ -287,6 +300,39 @@ a {
 .btn--main:hover {
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.card__content__like .liked {
+  transform: scale(0);
+  background: linear-gradient(0deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s;
+}
+.card__content__like .like-border {
+  transition: 0.3s;
+}
+.card__content__like:hover .liked {
+  transform: scale(1);
+}
+.card__content__like:hover .like-border {
+  background: linear-gradient(0deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card__content__like input[type=checkbox]:checked ~ .liked {
+  transform: scale(1);
+}
+.card__content__like input[type=checkbox]:checked ~ .like-border {
+  background: linear-gradient(0deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

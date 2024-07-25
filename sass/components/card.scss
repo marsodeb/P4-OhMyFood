@@ -16,13 +16,13 @@
             font-weight: 300;
         }
 
-        &__like .btn {
+        &__like i {
             font-size: 22px;
         }
     }
 
     img {
         object-fit: cover;
-
+        object-position: center 60%;
     }
 }
