@@ -1,4 +1,5 @@
-.card__content__like {
+.card__content__like,
+.restaurant__menu__like {
     .liked {
         transform: scale(0);
         @include gradient-purple;

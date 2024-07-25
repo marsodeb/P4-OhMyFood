@@ -17,8 +17,14 @@
 @import "./style/restaurant.scss";
 @import "./style/footer.scss";
 
+// Pages style
+@import "./style/pages_style/menu_header.scss";
+@import "./style/pages_style/menu_background_img.scss";
+@import "./style/pages_style/menu_section.scss";
+
 // Animations 
 @import "./animations/loader_anim.scss";
 @import "./animations/button_anim.scss";
 @import "./animations/fonctionnement_anim.scss";
 @import "./animations/like_anim.scss";
+@import "./animations/menu_anim.scss";
