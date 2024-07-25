@@ -1,0 +1,13 @@
+.fonctionnement__cards .card {
+    transition: 0.3s;
+}
+
+.fonctionnement__cards .card:hover {
+    background-color: rgba(146, 86, 220, 0.15);
+}
+
+.fonctionnement__cards .card:hover {
+    .card__content__icon {
+        color: $purple;
+    }
+}

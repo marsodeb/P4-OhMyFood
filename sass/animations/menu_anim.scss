@@ -1,0 +1,89 @@
+.restaurant__menu__cards__menu {
+
+    &.entree {
+        transform: translateX(-150%);
+        animation: apparition_menu 0.5s forwards;
+    }
+
+    &.plat {
+        transform: translateX(-150%);
+        animation: apparition_menu 0.5s 0.5s forwards;
+    }
+
+    &.dessert {
+        transform: translateX(-150%);
+        animation: apparition_menu 0.5s 1s forwards;
+    }
+
+    .card:hover .card__incart {
+        animation: apparition_incart 0.5s forwards;
+    }
+
+    .card:hover .card__incart i {
+        animation: apparition_check 0.5s forwards;
+    }
+
+    .card:hover .card__price {
+        animation: apparition_price 0.5s forwards;
+    }
+
+    .card:hover .card__content {
+        width: 70%;
+        transition: 0.5s;
+    }
+}
+
+
+@keyframes apparition_menu {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-150%);
+    }
+
+    50% {
+        transform: translateX(25%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes apparition_incart {
+
+    0% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes apparition_price {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-60px);
+    }
+}
+
+@keyframes apparition_check {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

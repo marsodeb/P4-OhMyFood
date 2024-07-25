@@ -1,0 +1,42 @@
+.card__content__like,
+.restaurant__menu__like {
+    .liked {
+        transform: scale(0);
+        @include gradient-purple;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.3s;
+    }
+
+    .like-border {
+        transition: 0.3s;
+    }
+
+    &:hover {
+        .liked {
+            transform: scale(1);
+        }
+
+        .like-border {
+            @include gradient-purple;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    input[type="checkbox"]:checked~.liked {
+        transform: scale(1);
+    }
+
+    input[type="checkbox"]:checked~.like-border {
+        @include gradient-purple;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

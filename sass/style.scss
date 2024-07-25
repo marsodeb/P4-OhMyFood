@@ -1,0 +1,30 @@
+// Base
+@import "./libs/reset.scss";
+@import "./components/colors.scss";
+
+// Components
+@import "./components/default.scss";
+@import "./components/loader.scss";
+@import "./components/button.scss";
+@import "./components/new-banner.scss";
+@import "./components/card.scss";
+
+// Style
+@import "./style/header.scss";
+@import "./style/location.scss";
+@import "./style/presentation.scss";
+@import "./style/fonctionnement.scss";
+@import "./style/restaurant.scss";
+@import "./style/footer.scss";
+
+// Pages style
+@import "./style/pages_style/menu_header.scss";
+@import "./style/pages_style/menu_background_img.scss";
+@import "./style/pages_style/menu_section.scss";
+
+// Animations 
+@import "./animations/loader_anim.scss";
+@import "./animations/button_anim.scss";
+@import "./animations/fonctionnement_anim.scss";
+@import "./animations/like_anim.scss";
+@import "./animations/menu_anim.scss";

@@ -1,0 +1,13 @@
+.presentation {
+    padding: 0 20px;
+    margin: 39px 0 57px 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+}

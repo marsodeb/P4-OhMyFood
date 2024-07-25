@@ -1,0 +1,56 @@
+.restaurant {
+    padding: 54px 20px 66px 20px;
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 17px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .new {
+                position: absolute;
+                right: 0;
+                margin: 15px;
+            }
+
+            img {
+                border-radius: 15px 15px 0 0;
+                height: 174px;
+                width: 100%;
+            }
+
+            &__content {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                padding: 16px 13px;
+
+                &__like {
+                    position: absolute;
+                    bottom: 25px;
+                    right: 25px;
+
+                    label {
+                        position: absolute;
+                        width: 22px;
+                        height: 22px;
+                        z-index: 1;
+                    }
+
+                    .card__content__like__button {
+                        display: none;
+                    }
+
+                    .like-border {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}

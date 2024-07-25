@@ -1,0 +1,27 @@
+.card {
+    border-radius: 15px;
+    min-height: 69px;
+    background-color: white;
+
+    &__content {
+        color: black;
+
+        &__title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &__subtitle {
+            font-size: 17px;
+            font-weight: 300;
+        }
+
+        &__like i {
+            font-size: 22px;
+        }
+    }
+
+    img {
+        object-position: center 60%;
+    }
+}
